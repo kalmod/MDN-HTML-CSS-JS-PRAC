@@ -1,0 +1,75 @@
+html{
+    font-size: 10px; 
+        /* px means 'pixels': the base font size is now 10 pixels high  */
+    font-family: 'Open Sans', sans-serif; 
+        /* this should be the rest of the output you got from Google fonts */
+    background-color: #00539f;
+    }
+
+body{
+    width: 600px;
+    /*width: 600px; — this forces the body to always be 600 
+    pixels wide.*/
+    margin: 0 auto;
+    /*margin: 0 auto; — When you set two values on a property 
+    like margin or padding, the first value affects the element's 
+    top and bottom side (make it 0 in this case), and the second 
+    value the left and right side (here, auto is a special value 
+    that divides the available horizontal space evenly between 
+    left and right). You can also use one, three, or four values, 
+    as documented 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/margin#Values */
+    background-color: #FF9500;
+    /*background-color: #FF9500; — as before, this sets the 
+    element's background color. We've used a sort of reddish 
+    orange for the body as opposed to dark blue for the <html> 
+    element, but feel free to go ahead and experiment.*/
+    padding: 0 20px 20px 20px;
+    /*padding: 0 20px 20px 20px; — we have four values set on the 
+    padding, to make a bit of space around our content. This time 
+    we are setting no padding on the top of the body, and 20 pixels 
+    on the left, bottom and right. The values set top, right, 
+    bottom, left, in that order. As with margin, you can also use 
+    one, two or three values, as documented on 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/padding#Syntax*/
+    border: 5px solid black;
+    /*border: 5px solid black; — this simply sets a 5-pixel–wide, 
+    solid black border on all sides of the body.*/
+}
+    h1{
+        font-size: 60px;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+        color: #00539F;
+        text-shadow: 3px 3px 1px black;
+        /*text-shadow: The first pixel value sets the horizontal offset of the 
+        shadow from the text — how far it moves across: a negative 
+        value should move it to the left.
+        The second pixel value sets the vertical offset of the 
+        shadow from the text — how far it moves down, in this 
+        example; a negative value should move it up.
+        The third pixel value sets the blur radius of the shadow — 
+        a bigger value will mean a more blurry shadow.
+        The fourth value sets the base color of the shadow.*/
+}
+
+p, li{
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    /*Finally, we'll center the image to make it look better. 
+    We could use the margin: 0 auto trick again as we did earlier 
+    for the body, but we also need to do something else. The 
+    <body> element is block level, meaning it takes up space on 
+    the page and can have margin and other spacing values applied 
+    to it. Images, on the other hand, are inline elements, meaning 
+    they can't. So to apply margins to the image, we have to give 
+    the image block-level behavior using display: block;
+    Display reference page: https://developer.mozilla.org/en-US/docs/Web/CSS/display*/
+}
